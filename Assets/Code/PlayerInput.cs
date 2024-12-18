@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class PlayerInput : MonoBehaviour
 {
-    public float Horizontal { get; private set; }
+    public float Movement { get; private set; }
+    public bool IsAttack {  get; private set; }
 
     // Update is called once per frame
     void Update()
     {
-        Horizontal = Input.GetAxis("Horizontal");
+        Movement = Input.GetAxis("Horizontal");
+        IsAttack = Input.GetMouseButtonDown(0);
     }
 }

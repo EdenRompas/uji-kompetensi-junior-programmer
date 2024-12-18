@@ -10,6 +10,6 @@ public class PlayerMovement : Entity
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(new Vector3(_playerInput.Horizontal, 0, 0) * Time.deltaTime * _playerSO.Speed);
+        transform.Translate(new Vector3(_playerInput.Movement, 0, 0) * Time.deltaTime * _playerSO.Speed);
     }
 }
