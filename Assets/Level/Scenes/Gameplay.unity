@@ -204,7 +204,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 157220151}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 282923586}
+        m_TargetAssemblyTypeName: UI_GameOver, Assembly-CSharp
+        m_MethodName: PlayAgainButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &157220151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1276,6 +1288,7 @@ GameObject:
   m_Component:
   - component: {fileID: 914543368}
   - component: {fileID: 914543369}
+  - component: {fileID: 914543370}
   m_Layer: 0
   m_Name: State Manager
   m_TagString: Untagged
@@ -1310,7 +1323,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8928930eb8ecf6d45a0e67bf2f4070a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _gameOverState: {fileID: 0}
   _gameStateSO: {fileID: 11400000, guid: 23f85befe66d07143ab83fe06a092ce6, type: 2}
+--- !u!114 &914543370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 914543367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28c3cae86ff664c43907f31fcfd4e456, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playerAnimator: {fileID: 6184886485276192622}
+  _gameOverCamera: {fileID: 705197094}
+  _mainCamera: {fileID: 963194225}
 --- !u!1 &940384363
 GameObject:
   m_ObjectHideFlags: 0
@@ -1619,7 +1648,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1015507135}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 282923586}
+        m_TargetAssemblyTypeName: UI_GameOver, Assembly-CSharp
+        m_MethodName: MainMenuButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1015507135
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2126,7 +2167,7 @@ MonoBehaviour:
   _minWidth: -10
   _maxWidth: 10
   _spawnPoint: 20
-  _spawnRate: 3
+  _spawnRate: 2
   _remeaningTime: 1
 --- !u!1 &1697784503
 GameObject:
@@ -2461,6 +2502,11 @@ PrefabInstance:
 --- !u!4 &6184886485276192621 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4348993264220232124, guid: 5e8fb60e1526f604fb5fe547b48a589a, type: 3}
+  m_PrefabInstance: {fileID: 6184886485276192620}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &6184886485276192622 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3660362019163877596, guid: 5e8fb60e1526f604fb5fe547b48a589a, type: 3}
   m_PrefabInstance: {fileID: 6184886485276192620}
   m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807

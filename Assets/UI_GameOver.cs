@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UI_GameOver : MonoBehaviour
 {
@@ -15,5 +16,15 @@ public class UI_GameOver : MonoBehaviour
     private void UpdateScore(int score)
     {
         _scoreText.text = score.ToString();
+    }
+
+    public void PlayAgainButton()
+    {
+        GameManager.Instance.PlayAgain();
+    }
+
+    public void MainMenuButton()
+    {
+        GameManager.Instance.MainMenu();
     }
 }

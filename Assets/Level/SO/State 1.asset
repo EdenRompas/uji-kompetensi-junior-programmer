@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23f7336bfd37f36459ac08e1f6411a62, type: 3}
   m_Name: State 1
   m_EditorClassIdentifier: 
-  Duration: 5
+  Duration: 60

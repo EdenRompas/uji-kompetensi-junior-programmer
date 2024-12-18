@@ -28,20 +28,23 @@ public class EnemyManager : MonoBehaviour
 
     private void Update()
     {
-        _timer -= Time.deltaTime;
-
-        if (_timer < 0)
+        if (StateManager.Instance.State == State.Play)
         {
-            int randomEnemy = UnityEngine.Random.Range(0, _enemyDatas.Count);
+            _timer -= Time.deltaTime;
 
-            float randomWidth = UnityEngine.Random.Range(_minWidth, _maxWidth);
+            if (_timer < 0)
+            {
+                int randomEnemy = UnityEngine.Random.Range(0, _enemyDatas.Count);
 
-            GameObject enemy = _enemyDatas[randomEnemy].EnemySO.Prefab;
-            Vector3 point = new Vector3(randomWidth, 0, _spawnPoint);
+                float randomWidth = UnityEngine.Random.Range(_minWidth, _maxWidth);
 
-            Instantiate(enemy, point, Quaternion.identity);
+                GameObject enemy = _enemyDatas[randomEnemy].EnemySO.Prefab;
+                Vector3 point = new Vector3(randomWidth, 0, _spawnPoint);
 
-            _timer = _spawnRate;
+                Instantiate(enemy, point, Quaternion.identity);
+
+                _timer = _spawnRate;
+            }
         }
     }
 }

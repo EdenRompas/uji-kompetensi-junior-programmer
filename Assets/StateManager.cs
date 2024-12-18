@@ -1,7 +1,12 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+
+public enum State
+{
+    Play,
+    Pause,
+    GameOver,
+}
 
 public class StateManager : MonoBehaviour
 {
@@ -11,8 +16,11 @@ public class StateManager : MonoBehaviour
     public Action OnStartTime;
     public Action<float> OnTimerChange;
 
+    [SerializeField] private GameOverState _gameOverState;
+
+    public State State { get; private set; }
+
     [SerializeField] private SO_GameState _gameStateSO;
-    [SerializeField] private GameObject _camera;
 
     private float _timer;
 
@@ -23,19 +31,23 @@ public class StateManager : MonoBehaviour
 
     private void Start()
     {
+        State = State.Play;
         _timer = _gameStateSO.Duration;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        _timer -= Time.deltaTime;
-        OnTimerChange?.Invoke(_timer);
-
-        if (_timer < 0)
+        if (State == State.Play)
         {
-            OnEndTime?.Invoke();
-            _camera?.SetActive(false);
+            _timer -= Time.deltaTime;
+            OnTimerChange?.Invoke(_timer);
+
+            if (_timer < 1)
+            {
+                _gameOverState.Enter();
+                State = State.GameOver;
+                OnEndTime?.Invoke();
+            }
         }
     }
 }

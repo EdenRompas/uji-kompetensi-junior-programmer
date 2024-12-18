@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b150bf8336a3ec646b7b6f831dec48f5, type: 3}
   m_Name: Player 1
   m_EditorClassIdentifier: 
-  Speed: 3
+  Speed: 6
   AttackRemeaning: 1
   ProjectileSO: {fileID: 11400000, guid: 21c3dff57a801834eb859fe61c7882e8, type: 2}
