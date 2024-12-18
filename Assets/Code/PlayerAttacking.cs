@@ -6,11 +6,19 @@ public class PlayerAttacking : MonoBehaviour
 {
     [SerializeField] private SO_Player _playerSO;
 
+    private float _timer;
+
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        _timer -= Time.deltaTime;
+
+        if (_timer < 0)
         {
-            Instantiate(_playerSO.ProjectileSO.Prefab, transform.position, Quaternion.identity);
+            if (Input.GetMouseButtonDown(0))
+            {
+                Instantiate(_playerSO.ProjectileSO.Prefab, transform.position, Quaternion.identity);
+                _timer = _playerSO.AttackRemeaning;
+            }
         }
     }
 }

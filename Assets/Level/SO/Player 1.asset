@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Player 1
   m_EditorClassIdentifier: 
   Speed: 3
+  AttackRemeaning: 1
   ProjectileSO: {fileID: 11400000, guid: 21c3dff57a801834eb859fe61c7882e8, type: 2}
