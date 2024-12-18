@@ -18,6 +18,11 @@ public class EnemyCollide : MonoBehaviour
                 ScoreManager.Instance.AddScore();
             }
 
+            if (collision.transform.GetComponentInParent<Entity>().EntityData == EntityData.Blocker)
+            {
+                ScoreManager.Instance.RemoveScore();
+            }
+
             Destroy(gameObject);
         }
     }
