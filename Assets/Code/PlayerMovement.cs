@@ -5,12 +5,11 @@ using UnityEngine;
 public class PlayerMovement : Entity
 {
     [SerializeField] private SO_Player _playerSO;
+    [SerializeField] private PlayerInput _playerInput;
 
     // Update is called once per frame
     void Update()
     {
-        float horizontal = Input.GetAxis("Horizontal");
-
-        transform.Translate(new Vector3(horizontal, 0, 0) * Time.deltaTime * _playerSO.Speed);
+        transform.Translate(new Vector3(_playerInput.Horizontal, 0, 0) * Time.deltaTime * _playerSO.Speed);
     }
 }
