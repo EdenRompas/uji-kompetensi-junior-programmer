@@ -12,6 +12,7 @@ public class ScoreData
 public class ScoreManager : MonoBehaviour
 {
     public static ScoreManager Instance { get; private set; }
+
     public Action<int> OnScoreChange;
 
     [SerializeField] private ScoreData _scoreData;

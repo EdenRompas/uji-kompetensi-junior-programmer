@@ -9,9 +9,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 417350493038150327}
+  - component: {fileID: 8667253763615205660}
   - component: {fileID: 7363098604027572754}
   - component: {fileID: 4767245715106478245}
-  - component: {fileID: 8667253763615205660}
+  - component: {fileID: 2607415584503982850}
+  - component: {fileID: 5900211456337451229}
   m_Layer: 0
   m_Name: Cow
   m_TagString: Untagged
@@ -36,31 +38,6 @@ Transform:
   - {fileID: 6246693162918500593}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7363098604027572754
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1189899216921907806}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abbf2d0adaf3b004d9deb075bb6eadbb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _enemySO: {fileID: 11400000, guid: da9ddcc0fb5f7d249b20e6033a5a1429, type: 2}
---- !u!114 &4767245715106478245
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1189899216921907806}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72c6d07dde85ed340bc8c98483f2b0ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &8667253763615205660
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -88,6 +65,59 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &7363098604027572754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189899216921907806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abbf2d0adaf3b004d9deb075bb6eadbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _enemySO: {fileID: 11400000, guid: da9ddcc0fb5f7d249b20e6033a5a1429, type: 2}
+--- !u!114 &4767245715106478245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189899216921907806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72c6d07dde85ed340bc8c98483f2b0ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2607415584503982850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189899216921907806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6078a67221ee3a48abcf35943091d55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _deathClip: {fileID: 8300000, guid: 0c008ee3ee72a4362a35be25fa5de043, type: 3}
+  _enemyCollide: {fileID: 4767245715106478245}
+--- !u!114 &5900211456337451229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189899216921907806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6404ab67dff87b748a7b95c414cec57c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _particleEffect: {fileID: 6699077083004332405, guid: f3c67c032b6ced84c87d109b1dea624e, type: 3}
+  _enemyCollide: {fileID: 4767245715106478245}
 --- !u!1 &1630490506494211712
 GameObject:
   m_ObjectHideFlags: 0

@@ -9,9 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b150bf8336a3ec646b7b6f831dec48f5, type: 3}
-  m_Name: Player 1
+  m_Script: {fileID: 11500000, guid: 23f7336bfd37f36459ac08e1f6411a62, type: 3}
+  m_Name: Play State
   m_EditorClassIdentifier: 
-  Speed: 6
-  AttackRemeaning: 1
-  ProjectileSO: {fileID: 11400000, guid: 21c3dff57a801834eb859fe61c7882e8, type: 2}
+  Duration: 60

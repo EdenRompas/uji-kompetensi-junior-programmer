@@ -9,7 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23f7336bfd37f36459ac08e1f6411a62, type: 3}
-  m_Name: State 1
+  m_Script: {fileID: 11500000, guid: 7ff01a3bdeb629541add3cf4b5833635, type: 3}
+  m_Name: Dog
   m_EditorClassIdentifier: 
-  Duration: 60
+  Speed: 4
+  Prefab: {fileID: 1189899216921907806, guid: fa62873b850d0664fb184ae6c1f401dd, type: 3}

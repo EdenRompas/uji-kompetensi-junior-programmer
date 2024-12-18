@@ -9,8 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ff01a3bdeb629541add3cf4b5833635, type: 3}
-  m_Name: Dog
+  m_Script: {fileID: 11500000, guid: b150bf8336a3ec646b7b6f831dec48f5, type: 3}
+  m_Name: Player
   m_EditorClassIdentifier: 
-  Speed: 3
-  Prefab: {fileID: 1189899216921907806, guid: fa62873b850d0664fb184ae6c1f401dd, type: 3}
+  Speed: 6
+  AttackRemeaning: 1
+  ProjectileSO: {fileID: 11400000, guid: 21c3dff57a801834eb859fe61c7882e8, type: 2}
