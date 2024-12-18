@@ -2164,6 +2164,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _enemyDatas:
   - EnemySO: {fileID: 11400000, guid: da9ddcc0fb5f7d249b20e6033a5a1429, type: 2}
+  - EnemySO: {fileID: 11400000, guid: f0341e667115cc44c878896ab1c4d4d5, type: 2}
+  - EnemySO: {fileID: 11400000, guid: 78822df3c5bc2c64cb1d07116474c25a, type: 2}
+  - EnemySO: {fileID: 11400000, guid: f06cf28fc01f59942812a865976911de, type: 2}
   _minWidth: -10
   _maxWidth: 10
   _spawnPoint: 20
