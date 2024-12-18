@@ -9,7 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23f7336bfd37f36459ac08e1f6411a62, type: 3}
-  m_Name: State 1
+  m_Script: {fileID: 11500000, guid: 7ff01a3bdeb629541add3cf4b5833635, type: 3}
+  m_Name: Deer
   m_EditorClassIdentifier: 
-  Duration: 5
+  Speed: 3
+  Prefab: {fileID: 1189899216921907806, guid: 9dde27fd4001a4b46bfa27c78122c39d, type: 3}

@@ -12,6 +12,7 @@ public class StateManager : MonoBehaviour
     public Action<float> OnTimerChange;
 
     [SerializeField] private SO_GameState _gameStateSO;
+    [SerializeField] private GameObject _camera;
 
     private float _timer;
 
@@ -34,6 +35,7 @@ public class StateManager : MonoBehaviour
         if (_timer < 0)
         {
             OnEndTime?.Invoke();
+            _camera?.SetActive(false);
         }
     }
 }

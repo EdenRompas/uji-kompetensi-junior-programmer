@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7ff01a3bdeb629541add3cf4b5833635, type: 3}
-  m_Name: Enemy 1
+  m_Name: Dog
   m_EditorClassIdentifier: 
   Speed: 3
-  Prefab: {fileID: 1189899216921907806, guid: 77aa29d83e226cd4fb1cfa68739513a7, type: 3}
+  Prefab: {fileID: 1189899216921907806, guid: fa62873b850d0664fb184ae6c1f401dd, type: 3}

@@ -37,7 +37,7 @@ public class EnemyManager : MonoBehaviour
             float randomWidth = UnityEngine.Random.Range(_minWidth, _maxWidth);
 
             GameObject enemy = _enemyDatas[randomEnemy].EnemySO.Prefab;
-            Vector3 point = new Vector3(randomWidth, 0.5f, _spawnPoint);
+            Vector3 point = new Vector3(randomWidth, 0, _spawnPoint);
 
             Instantiate(enemy, point, Quaternion.identity);
 

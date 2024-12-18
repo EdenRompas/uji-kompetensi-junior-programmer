@@ -29,7 +29,10 @@ public class ScoreManager : MonoBehaviour
 
     public void RemoveScore()
     {
-        _scoreData.Score -= 1;
-        OnScoreChange?.Invoke(_scoreData.Score);
+        if (_scoreData.Score > 0)
+        {
+            _scoreData.Score -= 1;
+            OnScoreChange?.Invoke(_scoreData.Score);
+        }
     }
 }
