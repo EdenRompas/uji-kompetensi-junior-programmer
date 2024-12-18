@@ -23,13 +23,13 @@ public class ScoreManager : MonoBehaviour
 
     public void AddScore()
     {
-        _scoreData.Score -= 1;
+        _scoreData.Score += 1;
         OnScoreChange?.Invoke(_scoreData.Score);
     }
 
     public void RemoveScore()
     {
-        _scoreData.Score += 1;
+        _scoreData.Score -= 1;
         OnScoreChange?.Invoke(_scoreData.Score);
     }
 }

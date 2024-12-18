@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c665f776a611c9c479eecacdccaf5bc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  EntityData: 0
   _projectileSO: {fileID: 11400000, guid: 21c3dff57a801834eb859fe61c7882e8, type: 2}
 --- !u!1 &8587940044416723008
 GameObject:
@@ -145,7 +146,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3

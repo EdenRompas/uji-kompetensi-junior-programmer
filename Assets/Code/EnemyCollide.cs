@@ -4,8 +4,21 @@ using UnityEngine;
 
 public class EnemyCollide : MonoBehaviour
 {
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider collision)
     {
-        ScoreManager.Instance.RemoveScore();
+        if (collision.transform.GetComponentInParent<Entity>() != null)
+        {
+            if (collision.transform.GetComponentInParent<Entity>().EntityData == EntityData.Player)
+            {
+                ScoreManager.Instance.RemoveScore();
+            }
+
+            if (collision.transform.GetComponentInParent<Entity>().EntityData == EntityData.Projectile)
+            {
+                ScoreManager.Instance.AddScore();
+            }
+
+            Destroy(gameObject);
+        }
     }
 }
