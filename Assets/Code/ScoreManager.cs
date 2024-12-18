@@ -31,7 +31,7 @@ public class ScoreManager : MonoBehaviour
     {
         if (_scoreData.Score > 0)
         {
-            _scoreData.Score -= 1;
+            _scoreData.Score -= 3;
             OnScoreChange?.Invoke(_scoreData.Score);
         }
     }

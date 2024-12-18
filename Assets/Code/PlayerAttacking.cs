@@ -12,14 +12,17 @@ public class PlayerAttacking : MonoBehaviour
 
     private void Update()
     {
-        _timer -= Time.deltaTime;
-
-        if (_timer < 0)
+        if (StateManager.Instance.State == State.Play)
         {
-            if (_playerInput.IsAttack)
+            _timer -= Time.deltaTime;
+
+            if (_timer < 0)
             {
-                Instantiate(_playerSO.ProjectileSO.Prefab, _spawnPoint.position, Quaternion.identity);
-                _timer = _playerSO.AttackRemeaning;
+                if (_playerInput.IsAttack)
+                {
+                    Instantiate(_playerSO.ProjectileSO.Prefab, _spawnPoint.position, Quaternion.identity);
+                    _timer = _playerSO.AttackRemeaning;
+                }
             }
         }
     }

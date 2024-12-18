@@ -42,7 +42,7 @@ public class StateManager : MonoBehaviour
             _timer -= Time.deltaTime;
             OnTimerChange?.Invoke(_timer);
 
-            if (_timer < 1)
+            if (_timer < 0)
             {
                 _gameOverState.Enter();
                 State = State.GameOver;
