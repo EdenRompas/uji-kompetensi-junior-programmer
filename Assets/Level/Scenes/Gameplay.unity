@@ -1323,7 +1323,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8928930eb8ecf6d45a0e67bf2f4070a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameOverState: {fileID: 0}
+  _gameOverState: {fileID: 914543370}
   _gameStateSO: {fileID: 11400000, guid: 23f85befe66d07143ab83fe06a092ce6, type: 2}
 --- !u!114 &914543370
 MonoBehaviour:
